@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/custom.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.css"  />
+
 </head>
 
 <body>
@@ -28,32 +30,24 @@
     <div id="preloder">
         <div class="loader"></div>
     </div>
-    <!-- Header Section Begin -->
-    <header class="header-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="main-menu">
-                        <div class="logo">
-                            <a href="./index.html">
-                                <img src="img/logo.png" alt="">
-                            </a>
-                        </div>
-                        <nav class="mobile-menu">
-                            <ul>
-                                <li><a href="./classes.html">Home</a></li>
-                                <li><a href="./classes.html">Classes</a></li>
-                                <li><a href="./elements.html">Instructors</a></li>
-                                <li><a href="./contact.html">Contact</a></li>
-                            </ul>
-                        </nav>
-                        <div id="mobile-menu-wrap"></div>
+   <!-- Header Section Begin -->
+   <header class="header-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="main-menu">
+                    <div class="logo">
+                        <a href="./index.html">
+                            <img src="img/logo.png" alt="">
+                        </a>
                     </div>
+               
                 </div>
             </div>
         </div>
-    </header>
-    <!-- Header End -->
+    </div>
+</header>
+<!-- Header End -->
     <!-- Search Bar Begin -->
     <section class="search-bar-wrap">
         <span class="search-close"><i class="fa fa-close"></i></span>
@@ -94,9 +88,9 @@
             <div class="row">
                 <div class="col-md-4 col-sm-6">
                     <div class="single-classes">
-                        <div class="classes-img">
+                        <button type="button" data-toggle="modal" data-target="#videoModal" class="classes-img">
                             <img src="img/classes/classes-1.jpg" alt="">
-                        </div>
+                        </button>
                         <div class="classes-text">
                             <h5>Pilates</h5>
                             <p>Pellentesque dictum nisl in nibh dictum volutpat nec a quam. Vivamus suscipit nisl quis
@@ -106,9 +100,9 @@
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <div class="single-classes">
-                        <div class="classes-img">
+                        <button type="button" data-toggle="modal" data-target="#videoModal" class="classes-img">
                             <img src="img/classes/classes-2.jpg" alt="">
-                        </div>
+                        </button>
                         <div class="classes-text">
                             <h5>Body Building</h5>
                             <p>Pellentesque dictum nisl in nibh dictum volutpat nec a quam. Vivamus suscipit nisl quis
@@ -118,9 +112,9 @@
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <div class="single-classes">
-                        <div class="classes-img">
+                        <button type="button" data-toggle="modal" data-target="#videoModal" class="classes-img">
                             <img src="img/classes/classes-3.jpg" alt="">
-                        </div>
+                        </button>
                         <div class="classes-text">
                             <h5>Fitness</h5>
                             <p>Pellentesque dictum nisl in nibh dictum volutpat nec a quam. Vivamus suscipit nisl quis
@@ -130,9 +124,9 @@
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <div class="single-classes">
-                        <div class="classes-img">
+                        <button type="button" data-toggle="modal" data-target="#videoModal" class="classes-img">
                             <img src="img/classes/classes-4.jpg" alt="">
-                        </div>
+                        </button>
                         <div class="classes-text">
                             <h5>Yoga</h5>
                             <p>Pellentesque dictum nisl in nibh dictum volutpat nec a quam. Vivamus suscipit nisl quis
@@ -142,9 +136,9 @@
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <div class="single-classes">
-                        <div class="classes-img">
+                        <button type="button" data-toggle="modal" data-target="#videoModal" class="classes-img">
                             <img src="img/classes/classes-5.jpg" alt="">
-                        </div>
+                        </button>
                         <div class="classes-text">
                             <h5>Trx</h5>
                             <p>Pellentesque dictum nisl in nibh dictum volutpat nec a quam. Vivamus suscipit nisl quis
@@ -154,9 +148,9 @@
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <div class="single-classes">
-                        <div class="classes-img">
+                        <button type="button" data-toggle="modal" data-target="#videoModal" class="classes-img">
                             <img src="img/classes/classes-6.jpg" alt="">
-                        </div>
+                        </button>
                         <div class="classes-text">
                             <h5>Spinning</h5>
                             <p>Pellentesque dictum nisl in nibh dictum volutpat nec a quam. Vivamus suscipit nisl quis
@@ -240,23 +234,87 @@
         </div>
     </section>
     <!-- Fitness Plan End -->
-    <!-- Classes Call To Action Section -->
-    <section class="classes-callto-section set-bg" data-setbg="img/classes/classes-callto-bg.jpg">
+    <!-- Contact Section Begin -->
+    <section class="contact-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <div class="classes-callto-text">
-                        <span>Join our gym now!</span>
-                        <h2>25% Discount</h2>
-                        <p>Arcu a tellus pellentesque ultrices. Ut euismod luctus elit id eleifend. Donec semper massa a
-                            imperdiet mattis. </p>
-                        <a href="#" class="primary-btn">Join</a>
+                <div class="col-lg-6">
+                    <div class="contact-info">
+                        <div class="contact-details d-flex align-items-center justify-content-between">
+                            <h2>Get in Touch</h2>
+                            <!-- <ul class="address">
+                                <li>Main Str, no 23, New York</li>
+                                <li>+546 990221 123</li>
+                                <li>Fitness@contact.com</li>
+                            </ul> -->
+                        </div>
+                        <div class="contact-form">
+                            <form action="#">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <input type="text" placeholder="Name">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <input type="email" placeholder="Email">
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <input type="text" placeholder="Subject">
+                                        <textarea placeholder="Message"></textarea>
+                                        <button type="submit" class="site-btn">Send Message</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="map" style="height:100%;"><iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48359.89302507648!2d-73.95762813994347!3d40.75117343692072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2592bc7bab159%3A0x56156cc4c5ee8e31!2sLong+Island+City%2C+Queens%2C+NY%2C+USA!5e0!3m2!1sen!2sbd!4v1561474745218!5m2!1sen!2sbd"
+                        style="border:0" allowfullscreen></iframe></div>
+                </div>
+            </div>
+        </div>
+     
+    </section>
+    <!-- Contact Section End -->
+
+    <section class="about-callto-section set-bg" data-setbg="img/callto-bg.png" style="background-image: url(&quot;img/callto-bg.png&quot;);">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="about-callto-text">
+                        <div class="cl-left d-flex align-items-center justify-content-center">
+                            <i class="ri-map-pin-line text-white"></i>
+                            <h2>Main Str, no 23, New York</h2>
+                          
+                        </div>
+                     
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="about-callto-text">
+                        <div class="cl-left d-flex align-items-center justify-content-center">
+                            <i class="ri-headphone-line text-white"></i>
+                            <h2>+546 990221 123</h2>
+                         
+                        </div>
+                     
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="about-callto-text">
+                        <div class="cl-left d-flex align-items-center justify-content-center">
+                            <i class="ri-mail-open-line text-white"></i>
+                            <h2>Fitness@contact.com</h2>
+                   
+                        </div>
+                     
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Classes Call To Action End -->
+
     <!-- Footer Section Begin -->
     <footer class="footer-section set-bg" data-setbg="img/footer-bg.jpg">
         <div class="container">
@@ -266,16 +324,14 @@
                         <div class="footer-logo">
                             <a href="#"><img src="img/logo.png" alt=""></a>
                         </div>
-                        <div class="footer-menu">
-                            <ul>
-                                <li><a href="./home.html">Home</a></li>
-                                <li><a href="#">About us</a></li>
-                                <li><a href="#">Classes</a></li>
-                                <li><a href="#">Instructors</a></li>
-                                <li><a href="#">News</a></li>
-                                <li><a href="#">Contact</a></li>
-                            </ul>
-                        </div>
+                            <!-- <div class="footer-menu">
+                                <ul>
+                                    <li><a href="./home.html">Home</a></li>
+                                    <li><a href="./classes.html">Classes</a></li>
+                                    <li><a href="./tyrainers.html">Instructors</a></li>
+                                    <li><a href="./contact.html">Contact</a></li>
+                                </ul>
+                            </div> -->
                         <div class="subscribe-form">
                             <form action="#">
                                 <input type="text" placeholder="your Email">
@@ -293,9 +349,9 @@
                             <img src="img/footer-icon.png" alt="">
                         </div>
                         <div class="copyright">
-                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://xpectcorps.com/home" target="_blank">Xpect Corps</a>
+
                         </div>
                     </div>
                 </div>
@@ -303,6 +359,24 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         </div>
     </footer>
     <!-- Footer Section End -->
+
+    <!-- Modal -->
+<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document" style="height: 75vh;">
+      <div class="modal-content" style="overflow: hidden; background-color: transparent; border: 0;">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        <div class="modal-body p-0 d-flex m-auto" >
+          <!-- Embed the video player -->
+          <video id="videoPlayer"  class="w-100" controls>
+            <source src="your_video_url_here.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
 
     <!-- Js Plugins -->
     <script src="js/jquery-3.3.1.min.js"></script>

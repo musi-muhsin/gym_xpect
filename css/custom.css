@@ -1,7 +1,69 @@
  .main-fearures{
-    display: block;
     border-radius: 10px;
     overflow: hidden;
      margin-bottom: 30px !important;
      background-color: #d0d0d026;
+    
+}
+.main-fearures:hover .feature-text{
+     opacity: 100%;
+}
+.feature-text{
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+.features-img{
+   border-radius: 20px;
+   overflow: hidden;
+}
+.feature-text {
+   display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0 ;
+    transition: 0.2s ease-in;
+}
+.logo{
+   left: 50% !important;
+}
+.contact-section{
+   padding: 89px 0;
+   background-color: #f4f4ff;
+}
+
+.trainers-text{
+   position: absolute;
+   bottom: -30%;
+   background-color: #0000006b;
+   width: 100%;
+  transition: 0.3s;
+}
+.trainers-classes:hover .trainers-text {
+   bottom: 0;
+}
+.cl-left{
+   gap: 10px;
+}
+.cl-left i{
+   font-size: 30px;
+}
+.single-classes .classes-img{
+   padding: 0;
+   border: 0;
+}
+#videoModal .close{
+   position: absolute;
+   top: 0;
+   right:0;
+   z-index: 99;
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+#videoPlayer{
+   border-radius: .3rem;
+   height: 93vh;
 }
