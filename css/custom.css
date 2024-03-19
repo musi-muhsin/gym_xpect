@@ -25,9 +25,9 @@
     opacity: 0 ;
     transition: 0.2s ease-in;
 }
-.logo{
+/* .logo{
    left: 50% !important;
-}
+} */
 .contact-section{
    padding: 89px 0;
    background-color: #f4f4ff;
